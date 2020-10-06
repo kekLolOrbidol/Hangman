@@ -1,0 +1,30 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:itemBackground">@color/colorPrimaryDark</item>
+        <item name="android:itemTextAppearance">@style/MenuItemStyle</item>
+    </style>
+    
+    <style name="MenuItemStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+    </style>
+
+    <style name="TitleSection">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="TitleGallows">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">300dp</item>
+    </style>
+
+    <style name="Gallows">
+        <item name="android:visibility">visible</item>
+    </style>
+</resources>

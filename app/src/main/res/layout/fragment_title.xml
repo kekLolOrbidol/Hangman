@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".TitleFragment">
+
+        <LinearLayout
+            android:id="@+id/title_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/TitleSection">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title"
+                android:textAllCaps="true"
+                android:fontFamily="serif"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/gallows"
+                android:src="@drawable/gallows_0"
+                style="@style/TitleGallows"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            style="@style/TitleSection">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/hangman_player_button"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yellow"
+                android:text="You Guess"
+                android:background="@drawable/letter_unguessed_background"
+                android:padding="10dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/hangman_gamemaster_button"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yellow"
+                android:text="Computer Guesses"
+                android:background="@drawable/letter_unguessed_background"
+                android:padding="10dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/options_button"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yellow"
+                android:text="Options"
+                android:background="@drawable/letter_unguessed_background"
+                android:padding="10dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".player.PlayerFragment">
+
+        <TextView
+            android:id="@+id/word_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.10"/>
+
+        <com.nex3z.flowlayout.FlowLayout
+            android:id="@+id/letter_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/word_holder"
+            app:flChildSpacing="auto"
+            app:flMinChildSpacing="10dp"
+            app:flRowSpacing="10dp"
+            app:flChildSpacingForLastRow="align"/>
+
+        <ImageButton
+            android:id="@+id/reset_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/refresh_button_background"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/ic_popup_sync"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/gallows"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/gallows_0"
+            style="@style/Gallows"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/letter_holder" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

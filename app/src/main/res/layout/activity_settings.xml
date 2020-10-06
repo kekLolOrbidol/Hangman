@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_settings"
+    tools:context=".options.SettingsActivity"
+    android:background="@color/yellow">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:textAllCaps="true"
+            android:fontFamily="serif"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/gallows"
+            android:src="@drawable/gallows_1"
+            style="@style/TitleGallows"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/change_background_button"
+            android:textColor="@color/yellow"
+            android:text="Change Background Color"
+            android:background="@drawable/letter_unguessed_background"
+            android:padding="10dp"/>
+
+        <Button
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:id="@+id/reset_color_button"
+            android:textColor="@color/yellow"
+            android:text="Reset Color to default"
+            android:background="@drawable/letter_unguessed_background"
+            android:padding="10dp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_group"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eng"
+                android:textSize="30dp"
+                android:textColor="@android:color/black"
+                android:layout_marginRight="40dp"
+                android:id="@+id/radio_eng"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="30dp"
+                android:text="Rus"
+                android:id="@+id/radio_rus" />
+
+        </RadioGroup>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

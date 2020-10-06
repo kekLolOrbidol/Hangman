@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorMainBackground">#DECC9C</color>
+    <color name="colorPrimary">#954535</color>
+    <color name="colorPrimaryDark">#7B3F00</color>
+    <color name="colorAccent">#E48400</color>
+    <color name="black">#000</color>
+    <color name="yellow">#FFE710</color>
+
+    <color name="letterBackgroundUnguessed">#FFE4BD</color>
+    <color name="letterBackgroundCorrectGuess">#4F7942</color>
+    <color name="letterBackgroundIncorrectGuess">#AA0000</color>
+
+    <color name="buttonRippleColor">@color/colorAccent</color>
+</resources>

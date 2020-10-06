@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Виселица</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">Виселица</string>
+    <string name="settings">Настройки</string>
+    <string name="background_color">Поменять цвет фона</string>
+    <string name="reset_color">Сбросить настройки цвета</string>
+    <string name="number_of_letters">Количество букв:</string>
+    <string name="not_in_word">Нет в слове</string>
+</resources>

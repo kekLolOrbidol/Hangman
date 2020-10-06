@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.sososoftware.hangman.TitleFragment"
+        android:label="fragment_title"
+        tools:layout="@layout/fragment_title" >
+        <action
+            android:id="@+id/action_titleFragment_to_hangmanGamemasterFragment"
+            app:destination="@id/hangmanGamemasterFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_hangmanPlayerFragment"
+            app:destination="@id/hangmanPlayerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hangmanGamemasterFragment"
+        android:name="com.sososoftware.hangman.gamemaster.GamemasterFragment"
+        android:label="fragment_hangman_gamemaster"
+        tools:layout="@layout/fragment_hangman_gamemaster" />
+    <fragment
+        android:id="@+id/hangmanPlayerFragment"
+        android:name="com.sososoftware.hangman.player.PlayerFragment"
+        android:label="fragment_hangman_player"
+        tools:layout="@layout/fragment_hangman_player" />
+</navigation>

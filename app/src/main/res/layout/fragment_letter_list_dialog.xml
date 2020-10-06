@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <com.nex3z.flowlayout.FlowLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="horizontal"
+        app:flChildSpacing="auto"
+        app:flChildSpacingForLastRow="align"
+        app:flMinChildSpacing="10dp"
+        app:flRowSpacing="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rejectGuessButton"
+        tools:context=".gamemaster.LetterListDialogFragment"
+        tools:listitem="@layout/fragment_item_list_dialog_list_dialog_item" />
+</layout>
